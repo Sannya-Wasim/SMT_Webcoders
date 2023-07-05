@@ -12,10 +12,10 @@ const Navbar = () => {
           </div>
           {/* Menu Items */}
           <div class="hidden md:flex space-x-6 text-right text-white">
-            <Link class="hover:text-darkGrayishBlue font-bold mx-8">Home</Link>
+            <Link class="hover:text-darkGrayishBlue font-bold mx-8" to='/'>Home</Link>
             <Link class="hover:text-darkGrayishBlue font-bold mx-8" to='/about'>About</Link>
             <Link class="hover:text-darkGrayishBlue font-bold mx-8">Events</Link>
-            <Link class="hover:text-darkGrayishBlue font-bold mx-8">Contact Us</Link>
+            <Link class="hover:text-darkGrayishBlue font-bold mx-8" to='/contact'>Contact Us</Link>
           </div>
 
           {/* Hamburger Icon*/}
