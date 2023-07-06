@@ -16,6 +16,7 @@ const EventsCard = ({ event }) => {
           <Link
             to={`/events/${event.id}`}
             className="border-2 border-blue-950 text-white bg-blue-950 rounded-md p-2"
+            
           >
             Read More
           </Link>
