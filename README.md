@@ -10,6 +10,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Access the deployed site here. [RCAI Autonomous Vehicles](https://64a7321c186eaf0555711b87--luxury-sunflower-9b64ca.netlify.app/)
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
