@@ -28,59 +28,74 @@ const Contact = () => {
       phone: phone,
       message: message,
     };
-    navigate('/')
+    navigate("/");
   };
 
   return (
     <div>
       <Navbar />
-      <div className="flex justify-center mt-20">
-        <div>
-          {/* left container */}
-          <div className="m-10 w-72">
-            <h3 className="font-bold text-2xl my-4">Contact Us</h3>
-            <p className="my-6">
-              See one of these sites for sponsorship or team inquiries:
+      <div className="flex flex-col md:flex-row justify-center mt-8 md:mt-20">
+        {/* left container */}
+        <div className="m-4 md:m-10 md:w-72">
+          <h3 className="font-bold text-2xl my-4 text-center text-blue-950 md:text-left">
+            Contact Us
+          </h3>
+          <p className="my-6">
+            See one of these sites for sponsorship or team inquiries:
+          </p>
+          <div className="items-center">
+            <button className="bg-blue-950 text-white p-4 font-bold my-4">
+              SPONSORSHIP INQUIRY FORM
+            </button>
+            <button className="bg-blue-950 text-white p-4 font-bold my-4">
+              JOIN THE TEAM
+            </button>
+            <button className="bg-blue-950 text-white p-4 font-bold my-4">
+              NEWSLETTER SIGN UP
+            </button>
+          </div>
+          <div>
+            <p className="my-4">
+              For press and other general inquiries, please use the form at
+              right.
             </p>
-            <div className="items-center">
-              <button className="bg-blue-950 text-white p-4 font-bold my-4">
-                SPONSORSHIP INQUIRY FORM
-              </button>
-              <button className="bg-blue-950 text-white p-4 font-bold my-4">
-                JOIN THE TEAM
-              </button>
-              <button className="bg-blue-950 text-white p-4 font-bold my-4">
-                NEWSLETTER SIGN UP
-              </button>
-            </div>
-            <div>
-              <p className="my-4">
-                For press and other general inquiries, please use the form at
-                right.
-              </p>
-            </div>
-            <div className="flex justify-between my-4">
-              <FontAwesomeIcon icon={faFacebook} className="w-6 h-6 m-4" />
-              <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 m-4" />
-              <FontAwesomeIcon icon={faLinkedin} className="w-6 h-6 m-4" />
-              <FontAwesomeIcon icon={faTwitter} className="w-6 h-6 m-4" />
-              <FontAwesomeIcon icon={faYoutube} className="w-6 h-6 m-4" />
-            </div>
+          </div>
+          <div className="flex justify-center md:justify-start my-4">
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="w-6 h-6 m-4 cursor-pointer"
+            />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="w-6 h-6 m-4 cursor-pointer"
+            />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="w-6 h-6 m-4 cursor-pointer"
+            />
+            <FontAwesomeIcon
+              icon={faTwitter}
+              className="w-6 h-6 m-4 cursor-pointer"
+            />
+            <FontAwesomeIcon
+              icon={faYoutube}
+              className="w-6 h-6 m-4 cursor-pointer"
+            />
           </div>
         </div>
         {/* right container */}
-        <div className="m-10">
+        <div className="m-4 md:m-10">
           <form className="mx-8">
             <h3>First Name</h3>
             <input
               type="text"
-              className="w-96 h-10 bg-gray-200 rounded-sm my-2"
+              className="w-full md:w-96 h-10 bg-gray-200 rounded-sm my-2"
               onChange={(e) => setFirstName(e.target.value)}
             />
             <h3>Last Name</h3>
             <input
               type="text"
-              className="w-96 h-10 bg-gray-200 rounded-sm my-2"
+              className="w-full md:w-96 h-10 bg-gray-200 rounded-sm my-2"
               onChange={(e) => setLastName(e.target.value)}
             />
 
@@ -89,7 +104,7 @@ const Contact = () => {
             </h3>
             <input
               type="text"
-              className="w-96 h-10 bg-gray-200 rounded-sm my-2"
+              className="w-full md:w-96 h-10 bg-gray-200 rounded-sm my-2"
               onChange={(e) => setEmail(e.target.value)}
             />
             <h3>
@@ -97,7 +112,7 @@ const Contact = () => {
             </h3>
             <input
               type="text"
-              className="w-96 h-10 bg-gray-200 rounded-sm my-2"
+              className="w-full md:w-96 h-10 bg-gray-200 rounded-sm my-2"
               onChange={(e) => setPhone(e.target.value)}
             />
             <h3>Message</h3>
@@ -106,13 +121,13 @@ const Contact = () => {
               id="message"
               cols="50"
               rows="3"
-              className="bg-gray-200 rounded-sm my-2"
+              className="w-full bg-gray-200 rounded-sm my-2"
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <br />
             <button
               className="my-4 bg-blue-950 text-white font-bold p-2 w-40 h-10 items-center"
-              onClick={handleSubmit()}
+              onClick={handleSubmit}
             >
               Submit
             </button>

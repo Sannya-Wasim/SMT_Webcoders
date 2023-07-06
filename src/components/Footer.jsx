@@ -6,38 +6,18 @@ import sponsor04 from '../assets/SC logo (1)-04.png'
 
 const Footer = () => {
   return (
-    <div>
-      <div className="bg-red-700 px-20 py-10">
-        <div className="text-center">
-          <h3 className="font-bold text-white text-base text-center mb-12">
-            POWERED BY
-          </h3>
-          <div className="flex justify-center">
-            <img
-            src={sponsor01}
-              alt=""
-              className='w-36 h-22 mx-2 mb-8'
-            />
-            <img
-            src={sponsor02}
-              alt=""
-              className='w-36 h-22 mx-2 mb-8'
-            />
-            <img
-            src={sponsor03}
-              alt=""
-              className='w-36 h-22 mx-2 mb-8'
-            />
-            <img
-            src={sponsor04}
-              alt=""
-              className='w-36 h-22 mx-2 mb-8'
-            />
-          </div>
-          <div className='text-white'>
-            &copy; 2022 MIT Driverless | 265 Masachusetts Avenue, Cambridge, MA
-            02139, USA
-          </div>
+    <div className="bg-red-700 px-6 md:px-20 py-10">
+      <div className="text-center">
+        <h3 className="font-bold text-white text-base mb-12">POWERED BY</h3>
+        <div className="flex flex-wrap justify-center">
+          <img src={sponsor01} alt="" className="w-28 h-16 mx-2 mb-8" />
+          <img src={sponsor02} alt="" className="w-28 h-16 mx-2 mb-8" />
+          <img src={sponsor03} alt="" className="w-28 h-16 mx-2 mb-8" />
+          <img src={sponsor04} alt="" className="w-28 h-16 mx-2 mb-8" />
+        </div>
+        <div className="text-white text-sm mt-6">
+          &copy; {new Date().getFullYear()} MIT Driverless | 265 Massachusetts
+          Avenue, Cambridge, MA 02139, USA
         </div>
       </div>
     </div>
@@ -45,3 +25,4 @@ const Footer = () => {
 };
 
 export default Footer;
+ 

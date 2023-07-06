@@ -11,7 +11,7 @@ const Events = () => {
         <h1 className="text-center my-6 font-extrabold text-blue-950 text-2xl">
           Upcoming Events
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-wrap">
           {events.upcoming.map((event) => {
             return <EventsCard event={event} />;
           })}
@@ -26,7 +26,7 @@ const Events = () => {
         <h1 className="text-center my-6 font-extrabold text-blue-950 text-2xl">
           Ongoing Events
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-wrap">
           {events.ongoing.map((event) => {
             return <EventsCard event={event} />;
           })}
@@ -41,7 +41,7 @@ const Events = () => {
         <h1 className="text-center my-6 font-extrabold text-blue-950 text-2xl">
           Past Events
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center flex-wrap">
           {events.past.map((event) => {
             return <EventsCard event={event} />;
           })}
@@ -53,7 +53,7 @@ const Events = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="mx-4 md:mx-8">
         <ShowOngoingEvents />
         <ShowUpcomingEvents />
         <ShowPastEvents />
