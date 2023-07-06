@@ -1,9 +1,7 @@
-import React from "react";
-
 const Gallery = () => {
   return (
     <div>
-      <div className="flex mx-24 my-10 ">
+      <div className="flex flex-col mx-24 my-10 md:flex-row ">
         <img
           src="https://images.squarespace-cdn.com/content/v1/5b79970e3c3a53723fab8cfc/1648072708637-L8NKIZXZOSNBDEZITSAA/GN3_8315.JPG?format=1000w"
           alt="Not available"

@@ -1,9 +1,7 @@
-import React from "react";
-
 const Challenge = () => {
   return (
     <div>
-      <div className='mx-48 my-4 flex justify-center text-left'>
+      <div className='mx-16 my-4 flex flex-col justify-center text-center md:flex-row md:mx-48 md:text-left'>
         <img
           src="https://images.squarespace-cdn.com/content/v1/5b79970e3c3a53723fab8cfc/1599000900791-LWSGS8U2HNLWI7FCBLQX/image-asset.png?format=500w"
           alt="Not available"

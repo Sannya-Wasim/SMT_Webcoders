@@ -5,20 +5,20 @@ const Hero = () => {
   return (
     <div>
       <div>
-        <div className="flex mx-40 my-20 text-left">
+        <div className="flex flex-col mx-16 my-20 text-left md:flex-row md:mx-40 ">
           <img
             src="https://images.squarespace-cdn.com/content/v1/5b79970e3c3a53723fab8cfc/fe05c480-cb9a-41cd-9ef8-2a070c2ddd04/IAC_0160_resized.jpg?format=750w"
             alt="Main not found"
             className="mx-4 w-100 h-60"
           />
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-3xl font-bold text-blue-950 md:text-5xl mt-4">
             In 2022, we are taking on the Indy Autonomous Challenge
           </h1>
         </div>
-        <h5 className="text-red-700 font-bold -mt-10 mx-96">
+        <h5 className="text-red-700 font-bold -mt-10 mx-16 md:mx-96">
           We are MIT Driverless, part of MIT-PITT-RW.
         </h5>
-        <div className="mx-24 my-10 text-left">
+        <div className="mx-10 my-10 text-left md:mx-24">
           <p>
             MIT Driverless’ mission is to be the hub of practical autonomy at
             MIT - to be the place where the brightest minds come to learn about
@@ -53,14 +53,14 @@ const Hero = () => {
             performant systems.
           </p>
         </div>
-        <div className="mx-32 my-10 flex justify-between">
-          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center">
+        <div className="mx-4 my-10 flex flex-col justify-around md:flex-row md:mx-32 md:space-x-4">
+          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center my-2 md:my-0">
             Learn More
           </button>
-          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center">
+          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center my-2 md:m-0">
             Join the Team
           </button>
-          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center">
+          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center my-2 md:m-0">
             Become a Sponsor
           </button>
         </div>
