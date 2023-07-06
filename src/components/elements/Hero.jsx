@@ -11,7 +11,7 @@ const Hero = () => {
             alt="Main not found"
             className="mx-4 w-100 h-60"
           />
-          <h1 className="text-3xl font-bold md:text-5xl mt-4">
+          <h1 className="text-3xl font-bold text-blue-950 md:text-5xl mt-4">
             In 2022, we are taking on the Indy Autonomous Challenge
           </h1>
         </div>
