@@ -54,13 +54,13 @@ const Hero = () => {
           </p>
         </div>
         <div className="mx-32 my-10 flex justify-between">
-          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 text-center mx-10">
+          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center">
             Learn More
           </button>
-          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 text-center mx-10">
+          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center">
             Join the Team
           </button>
-          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 text-center mx-10">
+          <button className="bg-red-700 text-white font-bold p-8 w-50 h-6 mx-10 text-center">
             Become a Sponsor
           </button>
         </div>
