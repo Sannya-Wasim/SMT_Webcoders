@@ -10,9 +10,9 @@ const About = () => {
         {/* First Section */}
         <div className="flex flex-col md:flex-row justify-between my-8">
           <div className="w-full md:w-1/4 md:mr-8 text-center">
-            <h3 className="font-bold text-2xl mb-4 md:mx-8">Our History</h3>
+            <h3 className="font-bold text-2xl text-blue-950 mb-4 md:mx-8">Our History</h3>
           </div>
-          <div className="md:w-3/4 ml-0 md:ml-4">
+          <div className="text-center md:w-3/4 ml-0 md:ml-4 md:text-left">
             <p>
               The MIT team was started in 2018 as our three person shop in a
               shared MIT office. In just 18 months, we grew to 25+ students and
@@ -33,9 +33,9 @@ const About = () => {
         {/* Second section */}
         <div className="flex flex-col md:flex-row justify-between my-8">
           <div className="w-full md:w-1/4 md:mr-8 text-center">
-            <h3 className="font-bold text-2xl mb-4 md:mx-8">Competition History</h3>
+            <h3 className="font-bold text-2xl text-blue-950 mb-4 md:mx-8">Competition History</h3>
           </div>
-          <div className="md:w-3/4 ml-0 md:ml-4">
+          <div className="text-center md:w-3/4 ml-0 md:ml-4 md:text-left">
             <p>
               Formula Student is the premier collegiate automotive engineering
               competition for 100+ teams from top universities. Formula Student

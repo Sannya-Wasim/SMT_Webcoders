@@ -43,7 +43,7 @@ const Contact = () => {
           <p className="my-6">
             See one of these sites for sponsorship or team inquiries:
           </p>
-          <div className="items-center">
+          <div className="items-center mx-20 md:mx-6 md:items-left">
             <button className="bg-blue-950 text-white p-4 font-bold my-4">
               SPONSORSHIP INQUIRY FORM
             </button>
@@ -126,7 +126,7 @@ const Contact = () => {
             ></textarea>
             <br />
             <button
-              className="my-4 bg-blue-950 text-white font-bold p-2 w-40 h-10 items-center"
+              className="my-4 bg-blue-950 text-white font-bold p-2 w-40 h-10 items-left"
               onClick={handleSubmit}
             >
               Submit
